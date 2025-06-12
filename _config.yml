@@ -1,3 +1,19 @@
-title: 내 블로그
-description: 테스트
-theme: jekyll-theme-minimal
+---
+remote_theme: sighingnow/jekyll-gitbook
+
+title: "내 GitBook 사이트"
+description: "Jekyll GitBook 테마로 만든 문서 사이트"
+
+# 기능 설정
+syntax_highlighter_style: colorful
+toc:
+  enabled: true
+  h_min: 2
+  h_max: 3
+
+# 검색 기능
+search: true
+
+# 댓글 시스템(옵션)
+disqushandler: "your-disqus-shortname"
+---

@@ -1,1 +1,0 @@
-# vkfkd1107.github.io
