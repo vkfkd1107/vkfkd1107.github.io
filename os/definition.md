@@ -38,10 +38,3 @@ graph TD
 | **Linux** | Ubuntu, CentOS | 오픈소스, 서버용 |
 | **Unix** | Solaris, AIX | 기업용, 안정성 |
 | **모바일** | Android, iOS | 터치 인터페이스 |
-
-## 🔗 다음 단계
-
-- [운영체제 구조](os/structure.md) - 운영체제의 내부 구조 살펴보기
-- [프로세스와 스레드](os/process-thread.md) - 실행 단위에 대한 이해 
-
-아코디언 테스트용 간단한 내용입니다. 
