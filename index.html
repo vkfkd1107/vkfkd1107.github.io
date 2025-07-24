@@ -13,7 +13,7 @@
   gtag('config', 'G-MP9LZ4R359');
 </script>
   <meta charset="UTF-8">
-  <title>로컬에선 잘됐는데</title>
+  <title>블뢰그</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   
@@ -70,7 +70,7 @@
   <div id="app">로딩 중...</div>
   <script>
     window.$docsify = {
-      name: '로컬에선 잘됐는데',
+      name: '블뢰그',
       loadSidebar: true,
       subMaxLevel: 3,
       sidebarDisplayLevel: 2, // 아코디언 레벨 설정
@@ -78,7 +78,6 @@
       plugins: [
         function(hook, vm) {
           hook.doneEach(function() {
-            // 페이지 렌더링 완료 후 quizdown 초기화
             setTimeout(function() {
               if (window.quizdown) {
                 window.quizdown.init();
@@ -88,30 +87,53 @@
         }
       ]
     }
-    
+    window.resetQuizButton = function(radioButton) {
+  const container = radioButton.closest('.quiz-container');
+  const button = container.querySelector('button');
+  const resultDiv = container.querySelector('.quiz-result');
+  
+  // 버튼을 원래 상태로 되돌리기
+  button.textContent = '답 확인';
+  button.disabled = false;
+  button.style.backgroundColor = '#42b983';
+  
+  // 결과 메시지 초기화
+  resultDiv.innerHTML = '';
+  
+  // 버튼 클릭 이벤트를 원래 함수로 되돌리기
+  button.onclick = function() { checkQuizAnswer(this); };
+}
     // 범용적인 퀴즈 함수 정의
-    window.checkQuizAnswer = function(button) {
-      const container = button.closest('.quiz-container');
-      const quizId = container.getAttribute('data-quiz-id');
-      const correctAnswer = container.getAttribute('data-correct-answer');
-      const selected = container.querySelector(`input[name="quiz${quizId}"]:checked`);
-      const resultDiv = container.querySelector('.quiz-result');
-      
-      if (!selected) {
-        resultDiv.innerHTML = '<div style="color: orange;">답을 선택해주세요!</div>';
-        return;
-      }
-      
-      if (selected.value === correctAnswer) {
-        resultDiv.innerHTML = '<div style="color: green;">✅ 정답입니다!</div>';
-      } else {
-        resultDiv.innerHTML = '<div style="color: red;">❌ 오답입니다. 다시 시도해보세요.</div>';
-      }
-      
-      // 버튼 비활성화 (한 번만 답변 가능)
-      button.disabled = true;
-      button.style.backgroundColor = '#ccc';
-    }
+window.checkQuizAnswer = function(button) {
+  const container = button.closest('.quiz-container');
+  const quizId = container.getAttribute('data-quiz-id');
+  const correctAnswer = container.getAttribute('data-correct-answer');
+  const selected = container.querySelector(`input[name="quiz${quizId}"]:checked`);
+  const resultDiv = container.querySelector('.quiz-result');
+  
+  if (!selected) {
+    resultDiv.innerHTML = '<div style="color: orange;">답을 선택해주세요!</div>';
+    return;
+  }
+  
+  if (selected.value === correctAnswer) {
+    resultDiv.innerHTML = '<div style="color: green;">✅ 정답입니다!</div>';
+    button.textContent = '다시 시도';
+    button.style.backgroundColor = '#ccc';
+  } else {
+    resultDiv.innerHTML = '<div style="color: red;">❌ 오답입니다.</div>';
+    button.textContent = '다시 시도';
+    button.style.backgroundColor = '#ccc';
+  }
+  button.onclick = function() {
+      // 선택 해제하고 다시 시도
+      container.querySelectorAll('input[type="radio"]').forEach(radio => radio.checked = false);
+      resultDiv.innerHTML = '';
+      button.style.backgroundColor = '#42b983';
+      button.textContent = '답 확인';
+      button.onclick = function() { checkQuizAnswer(this); };
+    };
+}
   </script>
   
   <!-- Docsify 스크립트 -->

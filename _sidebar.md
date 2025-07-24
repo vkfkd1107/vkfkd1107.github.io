@@ -8,6 +8,8 @@
     - [FCFS](os/scheduling/fcfs.md)
   - [정의](os/definition.md)
   - [구조](os/structure.md)
+  - [교착상태](os/deadlock/intro.md)
+    - [Intro](os/deadlock/intro.md)
 
 - **🐧 리눅스**
   - [정의](linux/definition.md)
