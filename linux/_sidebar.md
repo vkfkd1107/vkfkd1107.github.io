@@ -7,4 +7,7 @@
     - [ps](linux/commands/ps.md)
 - **리눅스 구조**
   - [summary](linux/structure/summary.md)
-  - [데몬(Daemon)의 개념과 역할](linux/structure/daemon.md)
+  - **Daemon**
+    - [개념과 역할](linux/structure/daemon/concept.md)
+    - [종류](linux/structure/daemon/type.md)
+    - [적용해보기](linux/structure/daemon/apply.md)
