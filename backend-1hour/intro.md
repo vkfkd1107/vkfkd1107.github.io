@@ -16,7 +16,7 @@
 6. 프론트에서 로그인 결과를 화면에 그려줌
 
 # request
-백엔드 서버는 request를 받아서, 여러 정보를 받을 수 있습니다
+백엔드 서버는 request를 받아서, request안에 담긴 여러 정보를 확인할 수 있습니다
 - 프론트에서 전달한 데이터(아이디, 비밀번호)
 - 프론트에서 요청한 주소(https://naver.com/news/?page=3&count=50)
 - 프론트에서 요청한 방법(GET, POST, PATCH,PUT, DELETE)
