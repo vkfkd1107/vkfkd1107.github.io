@@ -1,3 +1,4 @@
 - **백엔드 1시간만에 배우기**
   - [intro](backend-1hour/intro.md)
   - [command](backend-1hour/command.md)
+  - [git](backend-1hour/git.md)
