@@ -181,6 +181,8 @@ git pull origin dev
 
 
 # 직접 해보기
+0. [강의 시청](https://codingapple.com/course/git-and-github/)
+    - 위에 기재한 주요 명령어 부분만 봐도 충분합니다.
 1. myself-repository 저장소를 만듭니다
 2. myself branch에서 자기소개 파일을 만들어 깃허브에 올립니다
 3. dev 브랜치를 만들어서 myself branch로 올린 작업을 합쳐봅시다
