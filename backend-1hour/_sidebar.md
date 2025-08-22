@@ -6,3 +6,4 @@
   - [장고어드민 접속하기](backend-1hour/django_admin.md)
   - [블로그 만들기](backend-1hour/create_app.md)
       - [앱 생성하기](backend-1hour/create_app.md)
+      - [모델 생성하기](backend-1hour/create_model.md)
