@@ -39,6 +39,7 @@ projectC/
 | projectB | `Django2`, `sentry-sdk2`, `lxml2`, `requests2` |
 | projectC | `Django3`, `sentry-sdk3`, `lxml3`, `requests3` |
 
+`virtualenv [가상환경 이름]` 명령어를 사용하여 가상환경을 생성합니다
 ```bash
 virtualenv venv
 ```
@@ -66,7 +67,7 @@ pip install django
 ```bash
 django-admin startproject mysite
 ```
-위 명령어로 `mysite`라는 장고프로젝트가 생성됩니다
+위 명령어로 `mysite`라는 장고프로젝트가 생성됩니다  
 폴더 구조는 아래와 같습니다
 
 ```
