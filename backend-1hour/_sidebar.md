@@ -2,3 +2,4 @@
   - [intro](backend-1hour/intro.md)
   - [command](backend-1hour/command.md)
   - [git](backend-1hour/git.md)
+  - [장고서버 실행해보기](backend-1hour/start_django.md)
