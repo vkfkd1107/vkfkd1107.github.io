@@ -8,3 +8,4 @@
       - [앱 생성하기](backend-1hour/create_app.md)
       - [모델 생성하기](backend-1hour/create_model.md)
       - [API 만들기](backend-1hour/set_drf.md)
+      - [CRUD API 만들기-생성](backend-1hour/create.md)
