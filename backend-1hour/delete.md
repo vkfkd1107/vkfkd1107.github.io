@@ -29,3 +29,6 @@ urlpatterns = [
     path('delete/<int:pk>/', PostDelete.as_view()),
 ]
 ```
+
+
+

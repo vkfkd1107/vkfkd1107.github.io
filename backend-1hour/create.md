@@ -4,7 +4,7 @@
 
 ---
 
-## Post 생성하기
+# Post 생성하기
 `posts/views.py` 파일에 아래 코드를 추가해줍시다.
 
 ```python
@@ -156,8 +156,8 @@ class PostCreate(APIView):
         return Response(status=status.HTTP_201_CREATED)
 ```
 
-## 직접 해보기
-1. 댓글을 생성하는 기능을 추가해보세요
-2. 이메일 도메인이 `salarify.kr` 인 유저만 댓글을 생성할 수 있게 기능을 추가해보세요
+# 직접 해보기
+1. 댓글을 생성하는 기능을 추가해보세요. 유저 객체에 대해 FK키로 연결되야합니다.
+2. 이메일 도메인이 `salarify.kr`, `naver.com`, `gmail.com` 인 유저만 댓글을 생성할 수 있게 기능을 추가해보세요
     - 그 외의 유저가 댓글을 생성하려하면, 실패하게 만들어주세요
     - 상태코드도 알맞게 반환해야합니다
