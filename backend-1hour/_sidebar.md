@@ -10,3 +10,5 @@
       - [API 만들기](backend-1hour/set_drf.md)
       - [CRUD API 만들기-생성](backend-1hour/create.md)
       - [CRUD API 만들기-조회](backend-1hour/detail.md)
+      - [CRUD API 만들기-수정](backend-1hour/update.md)
+      - [CRUD API 만들기-삭제](backend-1hour/delete.md)
