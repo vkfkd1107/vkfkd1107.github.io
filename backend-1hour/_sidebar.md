@@ -12,3 +12,4 @@
       - [CRUD API 만들기-조회](backend-1hour/detail.md)
       - [CRUD API 만들기-수정](backend-1hour/update.md)
       - [CRUD API 만들기-삭제](backend-1hour/delete.md)
+  - [회원기능 구현하기](backend-1hour/auth.md)
