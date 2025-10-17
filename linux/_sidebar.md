@@ -7,6 +7,8 @@
     - [ps](linux/commands/ps.md)
 - **리눅스 구조**
   - [summary](linux/structure/summary.md)
+  - **파일시스템**
+    - [주요 디렉토리](linux/structure/file/dir.md)
   - **Daemon**
     - [개념과 역할](linux/structure/daemon/concept.md)
     - [종류](linux/structure/daemon/type.md)
