@@ -1,0 +1,3 @@
+- **Nginx**
+  - [nginx 소개](network/nginx/intro.md)
+  - [간단한 실습](network/nginx/simple_practice.md)
