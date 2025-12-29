@@ -1,3 +1,9 @@
 - **Nginx**
   - [nginx 소개](network/nginx/intro.md)
   - [간단한 실습](network/nginx/simple_practice.md)
+- **백엔드 서버 붙이기**
+  - [1. django 서버 실행](network/nginx/start_django.md)
+- **Admin 페이지 접속하기**
+  - [Admin 페이지 접속하기](network/nginx/django_admin.md)
+- **gunicorn**
+  - [gunicorn 소개](network/gunicorn/intro.md)
